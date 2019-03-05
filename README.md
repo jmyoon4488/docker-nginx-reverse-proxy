@@ -173,3 +173,7 @@
         }
     }
     ```
+1. If you want to add container wwith subdomain...
+   * You must dockerize web server
+   * The web server container joins in the same docker network (nginx-proxy)
+   * Dont't forget container's environment options

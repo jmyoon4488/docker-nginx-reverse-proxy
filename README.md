@@ -1,4 +1,4 @@
-# Nginx Reverse Proxy
+# Nginx Reverse Proxy Example with Node.js Express
 
 * Use docker-compose
 1. nginx-proxy container start

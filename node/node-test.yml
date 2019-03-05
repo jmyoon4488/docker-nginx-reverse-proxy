@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  nodejs-test:
+    container_name: node-test
+    image: nodejs:test
+    volumes:
+      - ./app:/src/app
+    environment:
+      - VIRTUAL_HOST=sub.domain.com
+      - VIRTUAL_PORT=3000
+      - LETSENCRYPT_HOST=sub.domain.com
+      - LETSCRYPT_EMAIL=your@email.com
+
+networks:
+  default:
+    external:
+      name: nginx-proxy

@@ -8,6 +8,8 @@
 -----
 1. nginx-proxy container start by docker-compose
     * change volumes path (/your/path/nginx-proxy)
+    * create proxy network
+      * ```docker network create nginx-proxy```
     * proxy/nginx-proxy-letsencrypt.yml
     ```yml
     version: '3'
